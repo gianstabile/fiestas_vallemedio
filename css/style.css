@@ -1,0 +1,252 @@
+/* Aplica un scroll suave al HTML */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Fondo oscuro para el body */
+body {
+  background-color: #121212;
+}
+
+/* Fuente blanca para el body, títulos de tarjetas, texto de tarjetas y enlaces de la barra de navegación */
+body,
+.card-title,
+.card-text,
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Establece la altura y posición del contenedor de video de fondo */
+.fullscreen-bg {
+  height: 100vh;
+  position: relative;
+}
+
+/* Agrega un efecto de desenfoque y opacidad al contenedor de video de fondo */
+.fullscreen-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/background-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+/* Configuración de la barra de navegación */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 100%
+  );
+}
+
+/* Configuración de los enlaces de la barra de navegación */
+.navbar-nav a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de resaltado al pasar el mouse por encima de los enlaces de la barra de navegación */
+.navbar-nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Agrega una línea animada debajo de los enlaces de la barra de navegación al pasar el mouse por encima */
+.navbar-nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Configuración del contenedor principal */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Configuración de los títulos principales */
+h1,
+h2 {
+  color: #fff;
+}
+
+/* Estilo del botón de "Pedir presupuesto" */
+.btn-primary {
+  background-color: #e7be0b;
+  color: #121212;
+  border-color: #fff;
+}
+
+/* Efecto de resaltado al pasar el mouse por encima del botón de "Pedir presupuesto" */
+.btn-primary:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Configuración del botón de "Volver arriba" */
+#scrollUpButton {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 15%;
+  background-color: #bbb8b8;
+  color: #3d3d3d;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#scrollUpButton:hover {
+  background-color: #555;
+}
+
+#scrollUpButton.show {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+.section {
+  height: auto;
+  min-height: 100vh;
+  padding: 10% 0;
+  position: relative;
+  scroll-margin-top: 50vh;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(2px);
+  opacity: 0.6;
+}
+
+#section-catering::before {
+  background-image: url("../img/background-catering.jpg");
+}
+
+#section-decoracion::before {
+  background-image: url("../img/background-decoracion.jpg");
+}
+
+#section-salones::before {
+  background-image: url("../img/background-salones.jpg");
+}
+
+#section-dj::before {
+  background-image: url("../img/background-djs.jpg");
+}
+
+#section-sonido::before {
+  background-image: url("../img/background-sonido.jpg");
+}
+
+#section-maquillaje::before {
+  background-image: url("../img/background-maquillaje.jpg");
+}
+
+#section-fotografia::before {
+  background-image: url("../img/background-fotografia.jpg");
+}
+
+#section-videografia::before {
+  background-image: url("../img/background-videografia.jpg");
+}
+
+#section-otros::before {
+  background-image: url("../img/background-otros.jpg");
+}
+
+/* Texto que alterna en el home*/
+.alternate-text {
+  animation: typing 1s steps(10) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Smartphone */
+@media (max-width: 995px) {
+  #navbarNav {
+    text-align: center;
+  }
+  span {
+    display: none;
+  }
+
+  #presentation_home {
+    padding: 0 15%;
+  }
+
+  .card {
+    margin: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .card-body {
+    text-align: center;
+  }
+  #social-icons-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
