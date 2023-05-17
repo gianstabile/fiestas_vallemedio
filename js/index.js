@@ -32,3 +32,23 @@ alternateText.addEventListener("animationiteration", () => {
   const nextWord = words[nextIndex];
   alternateText.innerText = nextWord;
 });
+
+//enviar por whatsapp
+function enviarWhatsApp(proveedor) {
+  let numeroTelefono = ""; // Variable para almacenar el número de teléfono según el proveedor
+
+  // Asignar el número de teléfono correspondiente según el proveedor
+  if (proveedor === "lambda") {
+    numeroTelefono = "5492984899820"; // Número de teléfono del proveedor 1
+  } else if (proveedor === "proveedor2") {
+    numeroTelefono = "YYYYYYYYY"; // Número de teléfono del proveedor 2
+  } else if (proveedor === "proveedor3") {
+    numeroTelefono = "ZZZZZZZZZ"; // Número de teléfono del proveedor 3
+  }
+
+  const mensaje = "¡Hola! Quiero solicitar un presupuesto.";
+  const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(
+    mensaje
+  )}`;
+  window.open(enlaceWhatsApp);
+}
