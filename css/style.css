@@ -84,6 +84,27 @@ body,
   transform-origin: bottom left;
 }
 
+.top_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_logo svg {
+  width: 12%; /* Ajusta el tamaño del SVG según tus necesidades */
+  height: 12%;
+  fill: white; /* Color de relleno del SVG */
+  margin-right: 10px; /* Espacio entre el SVG y el título */
+}
+
+.top_logo h4 {
+  text-align: left;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem; /* Ajusta el tamaño del título según tus necesidades */
+}
+
 /* Configuración del contenedor principal */
 .container-fluid {
   display: flex;
@@ -204,6 +225,11 @@ h2 {
   animation: typing 1s steps(10) infinite;
   white-space: nowrap;
   overflow: hidden;
+  color: #f1c70e;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  line-height: 15pt;
 }
 
 @keyframes typing {
@@ -228,6 +254,11 @@ h2 {
   }
   span {
     display: none;
+  }
+
+  .top_logo svg {
+    width: 20%;
+    height: 20%;
   }
 
   #presentation_home {
