@@ -256,6 +256,11 @@ h2 {
     display: none;
   }
 
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .top_logo svg {
     width: 20%;
     height: 20%;
