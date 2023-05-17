@@ -8,7 +8,12 @@
     />
     <title>Proveedores para Fiestas en Valle Medio</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +36,13 @@
       rel="stylesheet"
     />
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preload"
+      href="./css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/style.css" /></noscript>
   </head>
   <body>
     <!-- Navbar -->
@@ -273,7 +284,7 @@
         <div class="row">
           <div id="presentation_home" class="col-md-12">
             <h1 id="title" class="text-center mt-5">
-              ¿Querés hacer <span class="alternate-text">un cumpleaños</span> en
+              ¿Querés hacer <span class="alternate-text">una fiesta</span> en
               Valle Medio?
             </h1>
             <h2 class="text-center mb-5">
@@ -1470,32 +1481,39 @@
               <div class="col my-2">
                 <div class="card mb-3 bg-light text-dark">
                   <img
-                    src="https://picsum.photos/300/200?random=1"
+                    src="./img/proveedores/lambda_logo.png"
                     class="card-img-top"
-                    alt="Proveedor 1"
+                    alt="Logo Lambda Video Studio"
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-dark">Proveedor 1</h5>
+                    <h5 class="card-title text-dark">Lambda Video Studio</h5>
                     <div class="card-text text-dark">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Dicta adipisci exercitationem quia itaque odio delectus
-                      velit debitis corporis voluptatibus laborum maxime unde,
-                      cumque aliquid nemo aspernatur excepturi natus commodi
-                      expedita.
+                      Somos una productora audiovisual especializada en
+                      ofrecer servicios de video profesional para una amplia
+                      gama de necesidades. Ya sea que necesites un video de tu
+                      boda o cumpleaños, un video corporativo para promocionar tu
+                      empresa, un spot publicitario para tus productos o
+                      servicios, un videoclip musical de alta calidad o incluso
+                      servicios de drone para capturar tomas aéreas
+                      sorprendentes, ¡nosotros lo hacemos posible!
                       <div class="d-flex justify-content-center m-3">
-                        <a href="#"
+                        <a
+                          href="https://www.facebook.com/lambdavisual"
+                          target="_blank"
                           ><i class="fab fa-facebook fa-lg mr-3 text-dark"></i
                         ></a>
-                        <a href="#"
+                        <a
+                          href="https://www.instagram.com/lambdavisual"
+                          target="_blank"
                           ><i class="fab fa-instagram fa-lg mr-3 text-dark"></i
                         ></a>
-                        <a href="#"
+                        <a href="mailto:lambdavisual@gmail.com"
                           ><i class="far fa-envelope fa-lg mr-3 text-dark"></i
                         ></a>
-                        <a href="#"
+                        <a href="https://vimeo.com/lambdavisual" target="_blank"
                           ><i class="fas fa-globe fa-lg mr-3 text-dark"></i
                         ></a>
-                        <a href="#"
+                        <a href="https://walink.co/81cf7b" target="_blank"
                           ><i class="fab fa-whatsapp fa-lg mr-3 text-dark"></i
                         ></a>
                       </div>
