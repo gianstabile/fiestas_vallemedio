@@ -243,8 +243,15 @@ h2 {
 
 /* Footer */
 .footer {
-  background-color: #121212;
-  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  font-family: 'Righteous', cursive;
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: bisque;
+  text-decoration: none;
 }
 
 /* Smartphone */
