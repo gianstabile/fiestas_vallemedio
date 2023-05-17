@@ -249,10 +249,16 @@ h2 {
 
 /* Smartphone */
 @media (max-width: 995px) {
+  .navbar_mobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav_separator {
+    display: none;
+  }
   #navbarNav {
     text-align: center;
   }
-
   button:focus {
     outline: none;
     box-shadow: none;
@@ -262,7 +268,9 @@ h2 {
     width: 20%;
     height: 20%;
   }
-
+  #header_h2 {
+    padding-top: 3%;
+  }
   #presentation_home {
     padding: 0 15%;
   }
