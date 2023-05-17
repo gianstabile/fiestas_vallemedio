@@ -46,7 +46,8 @@ function enviarWhatsApp(proveedor) {
     numeroTelefono = "ZZZZZZZZZ"; // Número de teléfono del proveedor 3
   }
 
-  const mensaje = "¡Hola! Quiero solicitar un presupuesto.";
+  const mensaje =
+    "¡Hola! Estoy interesado/a en tus servicios y quiero solicitar un presupuesto.";
   const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(
     mensaje
   )}`;
