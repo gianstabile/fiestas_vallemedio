@@ -33,7 +33,7 @@ body,
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("../img/background-home.jpg");
+  background-image: url("../img/bg/bg-home.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -185,39 +185,39 @@ h2 {
 }
 
 #section-catering::before {
-  background-image: url("../img/background-catering.jpg");
+  background-image: url("../img/bg/bg-catering.webp");
 }
 
 #section-decoracion::before {
-  background-image: url("../img/background-decoracion.jpg");
+  background-image: url("../img/bg/bg-decoracion.webp");
 }
 
 #section-salones::before {
-  background-image: url("../img/background-salones.jpg");
+  background-image: url("../img/bg/bg-salones.webp");
 }
 
 #section-dj::before {
-  background-image: url("../img/background-djs.jpg");
+  background-image: url("../img/bg/bg-djs.webp");
 }
 
 #section-sonido::before {
-  background-image: url("../img/background-sonido.jpg");
+  background-image: url("../img/bg/bg-sonido.webp");
 }
 
 #section-maquillaje::before {
-  background-image: url("../img/background-maquillaje.jpg");
+  background-image: url("../img/bg/bg-maquillaje.webp");
 }
 
 #section-fotografia::before {
-  background-image: url("../img/background-fotografia.jpg");
+  background-image: url("../img/bg/bg-fotografia.webp");
 }
 
 #section-videografia::before {
-  background-image: url("../img/background-videografia.jpg");
+  background-image: url("../img/bg/bg-videografia.webp");
 }
 
 #section-otros::before {
-  background-image: url("../img/background-otros.jpg");
+  background-image: url("../img/bg/bg-otros.webp");
 }
 
 /* Texto que alterna en el home*/
