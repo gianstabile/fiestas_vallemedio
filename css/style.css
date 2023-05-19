@@ -120,6 +120,10 @@ h2 {
   color: #fff;
 }
 
+.card-img-top {
+  max-width: 500px;
+}
+
 /* Estilo del botón de "Pedir presupuesto" */
 .btn-primary {
   background-color: #e7be0b;
@@ -245,7 +249,7 @@ h2 {
 .footer {
   max-width: 70%;
   margin: 0 auto;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-size: 0.8rem;
 }
 
