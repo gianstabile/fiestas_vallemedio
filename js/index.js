@@ -39,11 +39,13 @@ function enviarWhatsApp(proveedor) {
 
   // Asignar el número de teléfono correspondiente según el proveedor
   if (proveedor === "lambda") {
-    numeroTelefono = "5492984899820"; // Número de teléfono del proveedor 1
+    numeroTelefono = "5492984899820";
   } else if (proveedor === "maquilleria") {
-    numeroTelefono = "5492984735925"; // Número de teléfono del proveedor 2
-  } else if (proveedor === "proveedor3") {
-    numeroTelefono = "ZZZZZZZZZ"; // Número de teléfono del proveedor 3
+    numeroTelefono = "5492984735925";
+  } else if (proveedor === "gselfie") {
+    numeroTelefono = "5491156568148";
+  } else if (proveedor === "soundtrack") {
+    numeroTelefono = "5492984323311";
   }
 
   const mensaje =
