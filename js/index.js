@@ -19,13 +19,7 @@ scrollUpButton.addEventListener("click", () => {
 //alternador de texto
 const alternateText = document.querySelector(".alternate-text");
 alternateText.addEventListener("animationiteration", () => {
-  const words = [
-    "un cumpleaños",
-    "una fiesta",
-    "un evento",
-    "una reunión",
-    "una boda",
-  ];
+  const words = ["un cumpleaños", "una fiesta", "un evento", "una reunión", "una boda"];
   const currentWord = alternateText.innerText;
   const index = words.indexOf(currentWord);
   const nextIndex = (index + 1) % words.length;
@@ -46,12 +40,13 @@ function enviarWhatsApp(proveedor) {
     numeroTelefono = "5491156568148";
   } else if (proveedor === "soundtrack") {
     numeroTelefono = "5492984323311";
+  } else if (proveedor === "byevelin") {
+    numeroTelefono = "5492984204081";
+  } else if (proveedor === "vus") {
+    numeroTelefono = "5492984617026";
   }
 
-  const mensaje =
-    "¡Hola! Estoy interesado/a en tus servicios y quiero solicitar un presupuesto.";
-  const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(
-    mensaje
-  )}`;
+  const mensaje = "¡Hola! Estoy interesado/a en tus servicios y quiero solicitar un presupuesto.";
+  const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
   window.open(enlaceWhatsApp);
 }
