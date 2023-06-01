@@ -44,6 +44,8 @@ function enviarWhatsApp(proveedor) {
     numeroTelefono = "5492984204081";
   } else if (proveedor === "vus") {
     numeroTelefono = "5492984617026";
+  } else if (proveedor === "gabymayol") {
+    numeroTelefono = "5492984536380";
   }
 
   const mensaje = "¡Hola! Estoy interesado/a en tus servicios y quiero solicitar un presupuesto.";
